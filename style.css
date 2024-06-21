@@ -1,0 +1,222 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Colors */
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #acacac;
+  --tertiary-color: #5d5d5d;
+  --accent-color: #95FE3A;
+  --support-color: #2b2b2b;
+  --background-color: #050505;
+}
+
+::selection {
+  background-color: #6110BD; /* Background color when text is selected */
+}
+
+/* Ticker */
+
+.ticker {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure ticker is behind other content */
+}
+
+.ticker__list {
+  display: flex;
+  animation: ticker 90s infinite linear;
+}
+
+.ticker__item {
+  margin-right: 20px;
+  width: 666px;
+  opacity: 0.16;
+}
+
+.ticker__item:hover {
+  opacity: 0.3;
+}
+
+@keyframes ticker {
+  100% {
+    transform: translateX(-100%); /*try changing this to -100vw*/
+  }
+}
+
+
+/*
+**************************
+Isa's CSS 
+**************************
+*/
+
+body{
+  overflow: hidden;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+
+h1{
+  color: var(--primary-color);
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 100%;
+}
+
+h1.centered{
+  text-align: center;
+  width: 984px;
+}
+
+p {
+  color: var(--secondary-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+p.centered{
+  text-align: center;
+  padding: 0 14%;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+/***** Header ******/
+
+.header, .hero {
+  position: relative; 
+  z-index: 2;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 40px 0 40px;
+  flex: 1;
+}
+
+.page-name{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-name img{
+  width: 50px;
+  height: 50px;
+}
+
+.page-name p{
+  color: var(--primary-color);
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-size: 1.50rem;
+}
+
+.navigation-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+}
+
+.navigation-menu a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+}
+
+.navigation-menu a.active::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Start from the center */
+  transform: translateX(-50%);
+  bottom: -8px; /* distance from text to underline */
+  width: 70%;
+  height: 2px; /* thickness of the underline */
+  background-color: var(--primary-color);
+  transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.navigation-menu a:hover::after {
+  width: calc(100%); /* Adjust the width of the underline relative to text width */
+  background-color: var(--accent-color); /* Color of the underline on active or hover */
+}
+
+.navigation-menu a:hover {
+  color: var(--accent-color);
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-media a {
+  margin-left: 24px;
+}
+
+/***** Hero ******/
+
+.hero {
+  width: 984px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/***** Gallery ******/
+
