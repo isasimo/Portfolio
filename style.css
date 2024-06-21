@@ -54,7 +54,8 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /* Ensure ticker is behind other content */
+  width: 100%;
+  z-index: 1; /* Lower z-index to keep it behind other content */
 }
 
 .ticker__list {
@@ -70,14 +71,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .ticker__item:hover {
   opacity: 0.3;
+  transition: opacity 0.3s; 
 }
+
 
 @keyframes ticker {
   100% {
     transform: translateX(-100%); /*try changing this to -100vw*/
   }
 }
-
 
 /*
 **************************
@@ -86,7 +88,6 @@ Isa's CSS
 */
 
 body{
-  overflow: hidden;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -131,7 +132,7 @@ a {
 
 /***** Header ******/
 
-.header, .hero {
+.header, .hero, .gallery {
   position: relative; 
   z-index: 2;
 }
@@ -211,7 +212,8 @@ a {
 /***** Hero ******/
 
 .hero {
-  width: 984px;
+  width: 100%; 
+  max-width: 984px; /* Limit width for larger screens */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -220,3 +222,67 @@ a {
 
 /***** Gallery ******/
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 150px;
+}
+
+.card {
+  width: 570px;
+  border-radius: 4px;
+  display: block;
+  overflow: hidden; /* Ensure content doesn’t overflow the card */
+}
+
+.card-image {
+  width: 100%;
+  height: 340px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover; /* Cover the container while preserving aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for image shift */
+  transform: translateY(0); 
+}
+
+.card:hover .card-image img {
+  transform: translateY(-5%); /* Move the image up on hover */
+}
+
+.card-type {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.card-info {
+  background-color: var(--support-color);
+  padding: 1rem;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+}
+
+h3{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  width: 90%;
+}
+
+.card-title img {
+  font-size: 20px;
+  transition: margin-left 0.2s ease;
+  width: 35px;
+}
+
+.card:hover .arrow {
+  margin-left: 20px;
+}
