@@ -7,7 +7,7 @@
       </a>
       <nav>
         <ul class="navigation-menu">
-            <li><router-link to="/home" active-class="active-link">Home</router-link></li>
+            <li><router-link to="/" active-class="active-link">Home</router-link></li>
             <li><router-link to="/about" active-class="active-link">About</router-link></li>
         </ul>
       </nav>
