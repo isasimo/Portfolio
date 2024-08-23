@@ -41,6 +41,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --accent-color: #95FE3A;
   --support-color: #2b2b2b;
   --background-color: #050505;
+  --text-color: #E8E8E8
 }
 
 ::selection {
@@ -77,7 +78,7 @@ h2{
   font-family: "Alice", serif;
   font-weight: 400;
   font-size: 2.5rem;
-  line-height: 100%;
+  line-height: 1.2em;
 }
 
 h3{
@@ -86,7 +87,7 @@ h3{
 }
 
 p {
-  color: var(--secondary-color);
+  color: var(--text-color);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -100,6 +101,27 @@ p.centered{
 
 a {
   text-decoration: none;
+}
+
+p a {
+  color: var(--accent-color);
+  position: relative;
+}
+
+p a::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Start from the center */
+  transform: translateX(-50%);
+  height: 1px; /* thickness of the underline */
+  width: 0;
+  bottom: -4px; /* Adjust this to move the underline closer or further from the text */
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+p a:hover::after {
+  width: calc(100%);
 }
 
 .highlight {

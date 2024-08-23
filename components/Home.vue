@@ -203,7 +203,7 @@
 
 .card-type {
   font-size: 14px;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .card-info {

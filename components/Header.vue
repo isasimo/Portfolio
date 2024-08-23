@@ -30,7 +30,7 @@
   </script>
   
   <style scoped>
-  .header {
+.header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -73,7 +73,7 @@
 }
 
 .navigation-menu a.active-link::after {
-    content: '';
+  content: '';
   position: absolute;
   left: 50%; /* Start from the center */
   transform: translateX(-50%);
