@@ -1,6 +1,6 @@
 <!-- Experience.vue -->
 <template>
-    <section class="experience">
+    <section class="experience" ref="experienceSection">
       <h2>Experience</h2>
       <div class="experience-list">
         <li>
@@ -40,11 +40,22 @@
     </section>
   </template>
   
-<script>
+  <script>
+  import ScrollReveal from 'scrollreveal';
   export default {
-    // Component options
+    mounted() {
+      // Apply ScrollReveal
+      ScrollReveal().reveal(this.$refs.experienceSection, {
+        duration: 800,
+        origin: 'bottom',
+        distance: '100px',
+        scale: 0.94,
+        easing: 'ease-out',
+        reset: false,
+      });
+    },
   };
-</script>
+  </script>
   
 <style scoped>
 .experience {

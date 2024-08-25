@@ -11,12 +11,13 @@
   "author": "Isa Simo",
   "license": "MIT",
   "dependencies": {
+    "scrollreveal": "^4.0.9",
     "vue-router": "^4.0.13"
   },
   "devDependencies": {
-    "vite": "^5.3.2",
-    "vue": "^3.4.31",
     "@vitejs/plugin-vue": "^5.0.5",
-    "@vue/compiler-sfc": "^3.4.31"
+    "@vue/compiler-sfc": "^3.4.31",
+    "vite": "^5.3.2",
+    "vue": "^3.4.31"
   }
 }
