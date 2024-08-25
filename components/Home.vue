@@ -21,9 +21,9 @@
           <div class="ticker__item"><img src="../assets/07.jpg" alt="" /></div>
         </div>
       </div>
-      <section class="hero" ref="heroSection">
-        <h1 class="centered"><span class="highlight">Hola! I’m Isa,</span> a product designer building products and communities</h1>
-        <p class="centered">
+      <section class="hero">
+        <h1 class="centered" ref="heroTitleSection"><span class="highlight">Hola! I’m Isa,</span> a product designer building products and communities</h1>
+        <p class="centered" ref="heroTextSection">
           Originally from Barcelona and living in Switzerland for 7 years, I’m a passionate interface designer that combines an understanding of various fields with a talent for innovative thinking. By creating visionary prototypes and refining products with care, I had the pleasure to work for companies like Disney Research, Constructor or Appfire while winning awards and prizes. Additionally, I’m
           a proud founder of a thrilling community garden.
         </p>
@@ -143,7 +143,7 @@
   export default {
     mounted() {
       // Apply ScrollReveal 
-      ScrollReveal().reveal(this.$refs.heroSection, {
+      ScrollReveal().reveal(this.$refs.heroTitleSection, {
         duration: 600,
         origin: 'bottom',
         distance: '30px',
@@ -151,14 +151,23 @@
         easing: 'ease-out',
         reset: false,
       });
-
+      ScrollReveal().reveal(this.$refs.heroTextSection, {
+        duration: 600,
+        origin: 'bottom',
+        distance: '50px',
+        scale: 0.92,
+        delay: 200,
+        easing: 'ease-out',
+        reset: false,
+      });  
       const galleryImages = this.$refs.gallerySection.querySelectorAll('a');
         galleryImages.forEach((a, index) => {
           ScrollReveal().reveal(a, {
-            duration: 500,
+            duration: 400,
             origin: 'bottom',
-            distance: '80px',
-            delay: 200 + (index * 50), // Delay each card for a cascading effect
+            distance: '50px',
+            scale: 0.85,
+            delay: 300 + (index * 50), // Delay each card for a cascading effect
             easing: 'ease-out',
             reset: false,
           });
