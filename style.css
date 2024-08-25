@@ -50,7 +50,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*
 **************************
-Isa's CSS 
+Global CSS 
 **************************
 */
 
@@ -129,22 +129,34 @@ p a:hover::after {
   color: var(--accent-color);
 }
 
-/***** Header ******/
-
 .header, .hero, .gallery {
   position: relative; 
   z-index: 2;
 }
 
-/***** Project template ******/
+/*
+**************************
+Project components
+**************************
+*/
 
 .project {
   width: 100%;
   max-width: 1120px; /* Limit width for larger screens */
   display: flex;
   flex-direction: column;
-  gap: 80px
+  gap: 80px;
+  align-items: center;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  align-items: center;
+}
+
+/***** Project hero ******/
 
 .project .hero {
   display: flex;
@@ -165,9 +177,13 @@ p a:hover::after {
   object-fit: cover; /* Cover the container while preserving aspect ratio */
 }
 
+/***** Project meta details ******/
+
 .meta {
   display: flex;
   gap: 100px;
+  width: 100%;
+  flex-wrap: wrap; /* This allows wrapping on smaller screens */
 }
 
 .meta-group {
@@ -187,13 +203,15 @@ p a:hover::after {
   list-style-type: none;
 }
 
-.in-depth {
+/***** Sticky-text-gallery ******/
+
+.sticky-text-gallery {
   display: flex;
   align-items: flex-start;
   gap: 60px;
 }
 
-.in-depth .text-section {
+.sticky-text-gallery .text-section {
   flex: 1;
   position: sticky;
   top: 40px;
@@ -203,15 +221,126 @@ p a:hover::after {
   gap: 16px;
 }
 
-.in-depth .gallery {
+.sticky-text-gallery .gallery {
   flex: 2;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.in-depth .gallery img {
+.sticky-text-gallery .gallery img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+}
+
+/***** Key contributions ******/
+
+.key-contributions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  width: 630px;
+  background: radial-gradient(53.4019% 96.0134% at 50% 24.5%, rgb(69, 69, 57) 0%, rgb(0, 0, 0) 72.6104%);
+  border-radius: 8px;
+  box-shadow: rgba(194, 193, 134, 0.14) 0px 0px 8px 6px;
+  border: 1px solid var(--tertiary-color);
+  padding: 32px 40px 48px;
+}
+
+.key-contributions ul {
+  padding: 0;
+  color: var(--primary-color);
+  list-style-type: none;
+  text-align: center;
+}
+
+/***** Prizes and awards ******/
+
+.prizes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.prizes-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.prizes-container img {
+  max-height: 100px;
+  max-width: 250px;
+  filter: grayscale(100%); /* Apply grayscale */
+  transition: filter 0.3s ease-out; /* Smooth transition on hover */
+}
+
+.prizes-container img:hover {
+  filter: grayscale(0%); /* Remove grayscale */
+  cursor: pointer;
+}
+
+/***** Info blocks ******/
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 740px;
+}
+
+.info-block ul {
+  padding-left: 16px;
+  color: var(--primary-color);
+}
+
+.info-block ul li {
+  margin-top: 4px;
+}
+
+/***** Documentation ******/
+
+.documentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.documentation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 740px;
+}
+
+.before-and-after {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.before-and-after figure {
+  text-align: center;
+  flex: 1; /* Allow figures to share available space equally */
+}
+
+.before-and-after figcaption {
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+
+.before-and-after img {
+  border-radius: 4px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 850px) {
+  .before-and-after {
+    flex-direction: column;
+    gap: 16px; /* Adjust gap if needed */
+  }
 }

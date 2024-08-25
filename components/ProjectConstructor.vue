@@ -8,6 +8,7 @@
         </div>
         <img src="../assets/project-constructor-hero.jpg" alt="">
       </section>
+
       <section class="meta">
         <div class="meta-group">
           <h3>Role</h3>
@@ -35,29 +36,106 @@
           </ul>
         </div>
       </section>
-      <section class="key-contributions">
-        <!-- TODO -->
-      </section>
-      <section class="prizes">
-        <!-- TODO -->
-      </section>
-      <section class="in-depth">
-        <div class="text-section">
-          <h2>Grafari</h2>
-          <p>Grafari guides children aged 6 and above through a spelling journey, from the introduction of letters and sounds to the basics of writing and typing. The goal during the training is to get the learner to a full focus mode, making elements on screen as clean and less distractive as possible. While exploring other sections of the app, learners engage in various activities such as listening to stories, purchasing items in the virtual shop, and tracking their progress.</p>
-        </div>
-        <div class="gallery">
-          <img src="../assets/grafari1.jpg" alt="">
-          <img src="../assets/grafari2.jpg" alt="">
-          <img src="../assets/grafari3.jpg" alt="">
-          <img src="../assets/grafari4.jpg" alt="">
-          <img src="../assets/grafari5.jpg" alt="">
-          <img src="../assets/grafari6.jpg" alt="">
-          <img src="../assets/grafari7.jpg" alt="">
-          <img src="../assets/grafari8.jpg" alt="">
-        </div>
-      </section>
 
+      <main class="main-content">
+
+        <section class="key-contributions">
+          <h2>Key contributions</h2>
+          <ul>
+            <li>200K+ lifetime users</li>
+            <li>3 training apps for learners</li>
+            <li>1 coaching app for educators</li>
+            <li>Localization to 17 languages</li>
+          </ul>
+        </section>
+
+        <section class="prizes">
+          <h2>Prizes and awards</h2>
+          <div class="prizes-container">
+            <a href="https://worlddidacaward.org/winner23-grafari" target="_blank"><img src="../assets/constructor-prize-worlddidac.png" alt="Worlddidac Award"></a>
+            <a href="https://designpreis.ch/" target="_blank"><img src="../assets/constructor-prize-designprize.png" alt="Design Prize Switzerland Winner 2021"></a>
+            <a href="https://www.dyslexiaaward.com" target="_blank"><img src="../assets/constructor-prize-dyslexia.png" alt="Dyslexia Quality Award"></a>
+            <a href="https://jacobsfoundation.org/awards" target="_blank"><img src="../assets/constructor-prize-jacobs.png" alt="Klaus J. Jacobs Awards"></a>
+          </div>
+        </section>
+
+        <section class="sticky-text-gallery">
+          <div class="text-section">
+            <h2>Grafari</h2>
+            <p>Grafari guides children aged 6 and above through a spelling journey, from the introduction of letters and sounds to the basics of writing and typing. The goal during the training is to get the learner to a full focus mode, making elements on screen as clean and less distractive as possible. While exploring other sections of the app, learners engage in various activities such as listening to stories, purchasing items in the virtual shop, and tracking their progress.</p>
+          </div>
+          <div class="gallery">
+            <img src="../assets/constructor-grafari1.jpg" alt="">
+            <img src="../assets/constructor-grafari2.jpg" alt="">
+            <img src="../assets/constructor-grafari3.jpg" alt="">
+            <img src="../assets/constructor-grafari4.jpg" alt="">
+            <img src="../assets/constructor-grafari5.jpg" alt="">
+            <img src="../assets/constructor-grafari6.jpg" alt="">
+            <img src="../assets/constructor-grafari7.jpg" alt="">
+            <img src="../assets/constructor-grafari8.jpg" alt="">
+          </div>
+        </section>
+        
+        <section class="sticky-text-gallery">
+          <div class="text-section">
+            <h2>Coach</h2>
+            <p>The coach provides educators, supervisors and parents with valuable insights into learners' activities and sessions. Users can analyze individual and group progress, as well as offer support to learners who may require support.</p>
+          </div>
+          <div class="gallery">
+            <img src="../assets/constructor-coach1.jpg" alt="">
+            <img src="../assets/constructor-coach2.jpg" alt="">
+            <img src="../assets/constructor-coach3.jpg" alt="">
+            <img src="../assets/constructor-coach4.jpg" alt="">
+          </div>
+        </section>
+        
+        <section class="info-block">
+          <h2>About my role</h2>
+          <p>As the sole Product Designer in the Schools team, my responsibilities ranged widely across products.</p>
+          <ul>
+            <li>Partnered closely with Christian Vögeli, the founder of Dybuster, to shape product strategy and vision.</li>
+            <li>Led projects through all stages of the design process — from conceptualization to execution — by developing user flows, creating interactive Figma prototypes, and preparing designs specifications for implementation.</li>
+            <li>Built and maintained a flexible design system tailored to the school ecosystem, adapting Figma components and variants for use across different educational apps.</li>
+            <li>Translated insights from subject matter experts into intuitive user experiences.</li>
+            <li>Collaborated with universities and professors to enhance our understanding and improve the effectiveness of educational apps and the coach feature through pilots in various schools.</li>
+            <li>Conducted user testing and research, engaging with teachers, parents, and learners to enhance the user experience.</li>
+          </ul>
+          <p>My contributions wouldn’t be the same without the collaboration of my colleague and friend, <a href="https://www.fraserjr.com/" target="_blank">Fraser</a>. Together, we worked closely to create illustrations and graphics that communicated to children in a fun and engaging manner.</p>
+        </section>
+
+        <section class="info-block">
+          <h2>Orthograph and Calcularis</h2>
+          <p>The two apps based on neuroscience and scientific studies to improve spelling, problem solving and reduce math anxiety were created before my time in Dybuster. The first collaboration started in 2017 as a freelance, and my task was to improve the navigation and user experience of the apps. This contributed in winning several awards like the Klaus J. Jacobs Awards Best Practice Prize:</p>
+          <div class="video-container">
+            <iframe 
+              width="740" 
+              height="416" 
+              src="https://www.youtube.com/embed/rzSB_VLOkiw?si=9mu0OUlfkD34oKDg" 
+              frameborder="0" 
+              allowfullscreen
+              title="Dybuster – 2020 Best Practice Prize recipient"
+            ></iframe>
+          </div>
+        </section>
+
+        <section class="documentation">
+          <div class="documentation-text">
+            <h2>Documentation</h2>
+            <p>Documentation is key in the process. Using Figma, I created design documentation that ensures clarity and common understanding for the developers or stakeholders. Below are snapshots of an overlay component documentation for a session details.</p>
+          </div>
+          <div class="before-and-after">
+            <figure>
+              <figcaption>Different variables for the component</figcaption>
+              <img src="../assets/constructor-documentation1.jpg" alt="Session details component in Figma">
+            </figure>
+            <figure>
+              <figcaption>Component guide</figcaption>
+              <img src="../assets/constructor-documentation2.jpg" alt="Component documentation guide in Figma">
+            </figure>
+          </div>
+        </section>
+
+      </main>
     </div>
   </template>
   
