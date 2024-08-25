@@ -65,14 +65,14 @@
             <p>Grafari guides children aged 6 and above through a spelling journey, from the introduction of letters and sounds to the basics of writing and typing. The goal during the training is to get the learner to a full focus mode, making elements on screen as clean and less distractive as possible. While exploring other sections of the app, learners engage in various activities such as listening to stories, purchasing items in the virtual shop, and tracking their progress.</p>
           </div>
           <div class="gallery">
-            <img src="../assets/constructor-grafari1.jpg" alt="">
-            <img src="../assets/constructor-grafari2.jpg" alt="">
-            <img src="../assets/constructor-grafari3.jpg" alt="">
-            <img src="../assets/constructor-grafari4.jpg" alt="">
-            <img src="../assets/constructor-grafari5.jpg" alt="">
-            <img src="../assets/constructor-grafari6.jpg" alt="">
-            <img src="../assets/constructor-grafari7.jpg" alt="">
-            <img src="../assets/constructor-grafari8.jpg" alt="">
+            <img src="../assets/constructor-grafari1.jpg" alt="Grafari cockpit">
+            <img src="../assets/constructor-grafari2.jpg" alt="Grafari exercise: handwriting">
+            <img src="../assets/constructor-grafari3.jpg" alt="Grafari exercise: typing phonetic words ">
+            <img src="../assets/constructor-grafari4.jpg" alt="Grafari exercise: typing with phones">
+            <img src="../assets/constructor-grafari5.jpg" alt="Grafari exercise: discover capital letters">
+            <img src="../assets/constructor-grafari6.jpg" alt="Grafari Story World map">
+            <img src="../assets/constructor-grafari7.jpg" alt="Grafari Story World scene">
+            <img src="../assets/constructor-grafari8.jpg" alt="Grafari Progress Passport">
           </div>
         </section>
         
@@ -82,10 +82,10 @@
             <p>The coach provides educators, supervisors and parents with valuable insights into learners' activities and sessions. Users can analyze individual and group progress, as well as offer support to learners who may require support.</p>
           </div>
           <div class="gallery">
-            <img src="../assets/constructor-coach1.jpg" alt="">
-            <img src="../assets/constructor-coach2.jpg" alt="">
-            <img src="../assets/constructor-coach3.jpg" alt="">
-            <img src="../assets/constructor-coach4.jpg" alt="">
+            <img src="../assets/constructor-coach1.jpg" alt="Coach learning board interface">
+            <img src="../assets/constructor-coach2.jpg" alt="Coach learner progress interface">
+            <img src="../assets/constructor-coach3.jpg" alt="Coach Download center interface">
+            <img src="../assets/constructor-coach4.jpg" alt="Coach Educational content interface">
           </div>
         </section>
         
