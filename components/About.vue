@@ -57,26 +57,26 @@ export default {
 
 <style scoped>
 .about {
-max-width: 740px;
+  max-width: 740px;
 }
 .about p {
-margin-top: 28px;
+  margin-top: 28px;
 }
 .gallery {
-width: 70%;
-display: flex;
-flex-wrap: wrap;
-gap: 10px; /* Space between images */
-justify-content: center; /* Center the gallery content */
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between images */
+  justify-content: center; /* Center the gallery content */
 }
 
 .gallery img {
-flex: 1 1 calc(33.333% - 20px); /* 3 columns layout */
-max-width: calc(33.333% - 20px);
-height: auto;
-object-fit: cover;
-display: block;
-margin: 0;
+  flex: 1 1 calc(33.333% - 20px); /* 3 columns layout */
+  max-width: calc(33.333% - 20px);
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0;
 }
 @media (max-width: 768px) {
 .gallery{

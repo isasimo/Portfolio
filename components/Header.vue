@@ -66,7 +66,7 @@
 }
 
 .navigation-menu a {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   display: inline-block;
   position: relative;

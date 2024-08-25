@@ -1,4 +1,4 @@
-<!-- About.vue -->
+<!-- Footer.vue -->
 <template>
     <footer>
       <p>Contact me</p>

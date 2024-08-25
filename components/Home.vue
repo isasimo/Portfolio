@@ -29,7 +29,7 @@
         </p>
       </section>
       <section class="gallery" ref="gallerySection">
-        <a href="#" class="card">
+        <a href="/constructor" class="card">
           <div class="card-image">
             <img src="../assets/gallery-constructor.jpg" alt="Constructor for Schools screenshots" />
           </div>
@@ -233,7 +233,7 @@
 
 .card-type {
   font-size: 14px;
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 .card-info {
