@@ -139,27 +139,15 @@
   
   <script>
   import ScrollReveal from 'scrollreveal';
-  
+  import { revealDefault } from '@/scrollAnimations';
+ 
   export default {
     mounted() {
+
       // Apply ScrollReveal 
-      ScrollReveal().reveal(this.$refs.heroTitleSection, {
-        duration: 600,
-        origin: 'bottom',
-        distance: '30px',
-        scale: 0.92,
-        easing: 'ease-out',
-        reset: false,
-      });
-      ScrollReveal().reveal(this.$refs.heroTextSection, {
-        duration: 600,
-        origin: 'bottom',
-        distance: '50px',
-        scale: 0.92,
-        delay: 200,
-        easing: 'ease-out',
-        reset: false,
-      });  
+      ScrollReveal().reveal(this.$refs.heroTitleSection, revealDefault);
+      ScrollReveal().reveal(this.$refs.heroTextSection, revealDefault);
+
       const galleryImages = this.$refs.gallerySection.querySelectorAll('a');
         galleryImages.forEach((a, index) => {
           ScrollReveal().reveal(a, {
@@ -167,7 +155,7 @@
             origin: 'bottom',
             distance: '50px',
             scale: 0.85,
-            delay: 300 + (index * 50), // Delay each card for a cascading effect
+            delay: 150 + (index * 50), // Delay each card for a cascading effect
             easing: 'ease-out',
             reset: false,
           });

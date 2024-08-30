@@ -1,12 +1,12 @@
 <!-- Project Constructor.vue -->
 <template>
     <div class="project">
-      <section class="hero">
+      <section class="hero" ref="heroSection">
         <div class="title">
-          <h1 ref="ProjectTitleSection">Constructor for Schools</h1>
-          <p>Constructor for Schools (formerly Dybuster) develops online learning systems for acquiring fundamental skills in writing and mathematics.</p>
+          <h1 class="default-animate">Constructor for Schools</h1>
+          <p class="default-animate">Constructor for Schools (formerly Dybuster) develops online learning systems for acquiring fundamental skills in writing and mathematics.</p>
         </div>
-        <img src="../assets/project-constructor-hero.jpg" alt="">
+        <img src="../assets/project-constructor-hero.jpg" alt="Constructor for Schools. Screenshots of Grafari application" class="default-animate">
       </section>
 
       <section class="meta">
@@ -38,17 +38,17 @@
       </section>
 
       <main class="main-content">
-
         <section class="key-contributions">
-          <h2>Key contributions</h2>
-          <ul>
-            <li>200K+ lifetime users</li>
-            <li>3 training apps for learners</li>
-            <li>1 coaching app for educators</li>
-            <li>Localization to 17 languages</li>
-          </ul>
-        </section>
-
+          <div class="key-contributions-container" ref="KeyContributionsMotion">
+            <h2>Key contributions</h2>
+            <ul>
+              <li>200K+ lifetime users</li>
+              <li>3 training apps for learners</li>
+              <li>1 coaching app for educators</li>
+              <li>Localization to 17 languages</li>
+            </ul>
+          </div>
+         </section>
         <section class="prizes">
           <h2>Prizes and awards</h2>
           <div class="prizes-container">
@@ -141,33 +141,38 @@
   
 <script>
   import ScrollReveal from 'scrollreveal';
-  
+  import { revealDefault } from '@/scrollAnimations';
+
   export default {
+
     mounted() {
-      // Apply ScrollReveal 
-      ScrollReveal().reveal(this.$refs.ProjectTitleSection, {
-        duration: 600,
-        origin: 'bottom',
-        distance: '30px',
-        scale: 0.92,
-        easing: 'ease-out',
-        reset: false,
+
+      // Apply Default ScrollReveal 
+      const elements = this.$refs.heroSection.querySelectorAll('.default-animate');
+      elements.forEach((el, index) => {
+        ScrollReveal().reveal(el, {
+          ...revealDefault, // Spread the reveal properties
+          delay: index * 100, // Add a delay based on each element
+        });
       });
-      ScrollReveal().reveal(this.$refs.heroTextSection, {
-        duration: 600,
+      
+      // Apply ScrollReveal 
+      ScrollReveal().reveal(this.$refs.KeyContributionsMotion, {
+        duration: 700,
         origin: 'bottom',
-        distance: '50px',
+        distance: '20px',
         scale: 0.92,
-        delay: 200,
         easing: 'ease-out',
-        reset: false,
-      });  
+        reset: true,
+        rotate: {
+          x: 80,
+        }
+      }); 
 
     },
   };
 </script>
   
 <style scoped>
-
 </style>
   

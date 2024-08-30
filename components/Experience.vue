@@ -42,17 +42,12 @@
   
   <script>
   import ScrollReveal from 'scrollreveal';
+  import { revealLong } from '@/scrollAnimations';
+
   export default {
     mounted() {
       // Apply ScrollReveal
-      ScrollReveal().reveal(this.$refs.experienceSection, {
-        duration: 800,
-        origin: 'bottom',
-        distance: '100px',
-        scale: 0.94,
-        easing: 'ease-out',
-        reset: false,
-      });
+      ScrollReveal().reveal(this.$refs.experienceSection, revealLong);
     },
   };
   </script>

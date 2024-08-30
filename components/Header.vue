@@ -54,7 +54,7 @@
   color: var(--primary-color);
   font-family: "Alice", serif;
   font-weight: 400;
-  font-size: 1.50rem;
+  font-size: 1.20rem;
 }
 
 .navigation-menu {
