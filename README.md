@@ -41,3 +41,11 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 ## License
 
 This project is licensed under the [MIT License](<[URL](https://en.wikipedia.org/wiki/MIT_License?useskin=vector)>) - see the [LICENSE](<[URL](https://github.com/isasimo/Portfolio?tab=MIT-1-ov-file)>) file for details.
+
+## Project Component Template
+
+The `TemplateProject.vue` component is a template that can be used as a starting point for creating new project components.
+
+### Usage
+
+Copy the `TemplateProject.vue` file into your components directory and modify it according to your needs.
