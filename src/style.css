@@ -172,8 +172,8 @@ Project components
 }
 
 .project .hero img {
-  border-radius: 4px;
   height: 555px;
+  border-radius: 4px;
   object-fit: cover; /* Cover the container while preserving aspect ratio */
 }
 
