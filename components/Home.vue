@@ -42,7 +42,7 @@
           </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="/jsu" class="card">
           <div class="card-image">
             <img src="../assets/gallery-jsu.jpg" alt="Universal Rule Build for Jira screenshot" />
           </div>
@@ -133,15 +133,22 @@
           </div>
         </a>
       </section>
-    
+      <ExperienceComponent></ExperienceComponent>
+
     </div>
+
   </template>
   
   <script>
+  import ExperienceComponent from './Experience.vue';
   import ScrollReveal from 'scrollreveal';
   import { revealDefault } from '@/scrollAnimations';
  
   export default {
+    components: {
+      ExperienceComponent
+    },
+    
     mounted() {
 
       // Apply ScrollReveal 

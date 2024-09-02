@@ -19,13 +19,20 @@
       <img src="../assets/06.jpg" alt="" />
     </div>
   </section>
+  <ExperienceComponent></ExperienceComponent>
+
 </template>
 
 <script>
+import ExperienceComponent from './Experience.vue';
 import ScrollReveal from 'scrollreveal';
 import { revealDefault } from '@/scrollAnimations';
 
 export default {
+  components: {
+    ExperienceComponent
+  },
+    
   mounted() {
     // Apply Default ScrollReveal 
     const elements = this.$refs.aboutSection.querySelectorAll('.default-animate');

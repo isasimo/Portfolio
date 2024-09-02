@@ -45,6 +45,8 @@
   import { revealLong } from '@/scrollAnimations';
 
   export default {
+    name: 'ExperienceComponent',
+
     mounted() {
       // Apply ScrollReveal
       ScrollReveal().reveal(this.$refs.experienceSection, revealLong);
@@ -102,16 +104,4 @@
   width: 16%;
 }
 
-.buttonet {
-  padding: 12px 48px;
-  background-color: var(--accent-color);
-  border-radius: 4px;
-  color: var(--background-color);
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-
-.buttonet:hover {
-  background-color: var(--primary-color);
-}  </style>
-  
+</style>

@@ -33,6 +33,7 @@
       </section>
 
       <main class="main-content">
+
         <section class="key-contributions">
           <div class="key-contributions-container" ref="KeyContributionsMotion">
             <h2>Key contributions</h2>
@@ -44,6 +45,7 @@
             </ul>
           </div>
          </section>
+         
         <section class="prizes">
           <h2>Prizes and awards</h2>
           <div class="prizes-container">

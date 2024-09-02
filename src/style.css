@@ -125,6 +125,14 @@ p a:hover::after {
   width: calc(100%);
 }
 
+ul {
+  padding-left: 16px;
+}
+
+li {
+  color: var(--text-color);
+}
+
 .highlight {
   color: var(--accent-color);
 }
@@ -133,6 +141,21 @@ p a:hover::after {
   position: relative; 
   z-index: 2;
 }
+
+/* Primary button */
+
+.buttonet {
+  padding: 12px 48px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: var(--background-color);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.buttonet:hover {
+  background-color: var(--primary-color);
+}  
 
 /*
 **************************

@@ -6,7 +6,7 @@
           <h1 class="default-animate">Constructor for Schools</h1>
           <p class="default-animate">Constructor for Schools (formerly Dybuster) develops online learning systems for acquiring fundamental skills in writing and mathematics.</p>
         </div>
-        <img src="../assets/project-constructor-hero.jpg" alt="Constructor for Schools. Screenshots of Grafari application" class="default-animate">
+        <img src="../assets/hero-constructor.jpg" alt="Constructor for Schools. Screenshots of Grafari application" class="default-animate">
       </section>
 
       <section class="meta">
@@ -52,10 +52,10 @@
         <section class="prizes">
           <h2>Prizes and awards</h2>
           <div class="prizes-container">
-            <a href="https://worlddidacaward.org/winner23-grafari" target="_blank"><img src="../assets/constructor-prize-worlddidac.png" alt="Worlddidac Award"></a>
-            <a href="https://designpreis.ch/" target="_blank"><img src="../assets/constructor-prize-designprize.png" alt="Design Prize Switzerland Winner 2021"></a>
-            <a href="https://www.dyslexiaaward.com" target="_blank"><img src="../assets/constructor-prize-dyslexia.png" alt="Dyslexia Quality Award"></a>
-            <a href="https://jacobsfoundation.org/awards" target="_blank"><img src="../assets/constructor-prize-jacobs.png" alt="Klaus J. Jacobs Awards"></a>
+            <a href="https://worlddidacaward.org/winner23-grafari" target="_blank"><img src="../assets/p_constructor/prize-worlddidac.png" alt="Worlddidac Award"></a>
+            <a href="https://designpreis.ch/" target="_blank"><img src="../assets/p_constructor/prize-designprize.png" alt="Design Prize Switzerland Winner 2021"></a>
+            <a href="https://www.dyslexiaaward.com" target="_blank"><img src="../assets/p_constructor/prize-dyslexia.png" alt="Dyslexia Quality Award"></a>
+            <a href="https://jacobsfoundation.org/awards" target="_blank"><img src="../assets/p_constructor/prize-jacobs.png" alt="Klaus J. Jacobs Awards"></a>
           </div>
         </section>
 
@@ -65,14 +65,14 @@
             <p>Grafari guides children aged 6 and above through a spelling journey, from the introduction of letters and sounds to the basics of writing and typing. The goal during the training is to get the learner to a full focus mode, making elements on screen as clean and less distractive as possible. While exploring other sections of the app, learners engage in various activities such as listening to stories, purchasing items in the virtual shop, and tracking their progress.</p>
           </div>
           <div class="gallery">
-            <img src="../assets/constructor-grafari1.jpg" alt="Grafari cockpit">
-            <img src="../assets/constructor-grafari2.jpg" alt="Grafari exercise: handwriting">
-            <img src="../assets/constructor-grafari3.jpg" alt="Grafari exercise: typing phonetic words ">
-            <img src="../assets/constructor-grafari4.jpg" alt="Grafari exercise: typing with phones">
-            <img src="../assets/constructor-grafari5.jpg" alt="Grafari exercise: discover capital letters">
-            <img src="../assets/constructor-grafari6.jpg" alt="Grafari Story World map">
-            <img src="../assets/constructor-grafari7.jpg" alt="Grafari Story World scene">
-            <img src="../assets/constructor-grafari8.jpg" alt="Grafari Progress Passport">
+            <img src="../assets/p_constructor/grafari1.jpg" alt="Grafari cockpit">
+            <img src="../assets/p_constructor/grafari2.jpg" alt="Grafari exercise: handwriting">
+            <img src="../assets/p_constructor/grafari3.jpg" alt="Grafari exercise: typing phonetic words ">
+            <img src="../assets/p_constructor/grafari4.jpg" alt="Grafari exercise: typing with phones">
+            <img src="../assets/p_constructor/grafari5.jpg" alt="Grafari exercise: discover capital letters">
+            <img src="../assets/p_constructor/grafari6.jpg" alt="Grafari Story World map">
+            <img src="../assets/p_constructor/grafari7.jpg" alt="Grafari Story World scene">
+            <img src="../assets/p_constructor/grafari8.jpg" alt="Grafari Progress Passport">
           </div>
         </section>
         
@@ -82,10 +82,10 @@
             <p>The coach provides educators, supervisors and parents with valuable insights into learners' activities and sessions. Users can analyze individual and group progress, as well as offer support to learners who may require support.</p>
           </div>
           <div class="gallery">
-            <img src="../assets/constructor-coach1.jpg" alt="Coach learning board interface">
-            <img src="../assets/constructor-coach2.jpg" alt="Coach learner progress interface">
-            <img src="../assets/constructor-coach3.jpg" alt="Coach Download center interface">
-            <img src="../assets/constructor-coach4.jpg" alt="Coach Educational content interface">
+            <img src="../assets/p_constructor/coach1.jpg" alt="Coach learning board interface">
+            <img src="../assets/p_constructor/coach2.jpg" alt="Coach learner progress interface">
+            <img src="../assets/p_constructor/coach3.jpg" alt="Coach Download center interface">
+            <img src="../assets/p_constructor/coach4.jpg" alt="Coach Educational content interface">
           </div>
         </section>
         
@@ -126,11 +126,11 @@
           <div class="before-and-after">
             <figure>
               <figcaption>Different variables for the component</figcaption>
-              <img src="../assets/constructor-documentation1.jpg" alt="Session details component in Figma">
+              <img src="../assets/p_constructor/documentation1.jpg" alt="Session details component in Figma">
             </figure>
             <figure>
               <figcaption>Component guide</figcaption>
-              <img src="../assets/constructor-documentation2.jpg" alt="Component documentation guide in Figma">
+              <img src="../assets/p_constructor/documentation2.jpg" alt="Component documentation guide in Figma">
             </figure>
           </div>
         </section>
