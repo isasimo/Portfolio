@@ -363,6 +363,31 @@ Project components
   border-radius: 4px;
 }
 
+/********* Overlay on Lightbox image *********/
+
+.imageoverlay {
+  position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.imageoverlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    z-index: 1;
+    pointer-events: none; /* Prevents the overlay from blocking interactions */
+}
+
+.imageoverlay:hover::before {
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 50% opacity on hover */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 850px) {
   .before-and-after {

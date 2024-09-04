@@ -11,6 +11,7 @@
   "author": "Isa Simo",
   "license": "MIT",
   "dependencies": {
+    "lightbox2": "^2.11.4",
     "scrollreveal": "^4.0.9",
     "vue-router": "^4.0.13"
   },
