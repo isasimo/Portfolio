@@ -56,9 +56,9 @@ portfolio/
 │   └── Project2.vue
 │   └── Project3.vue
 │   └── ProjectTemplate.vue
+│   └── SocialMedia.vue
 ├── src/
-│   └── lightbox-plus-jquery.min.js
-│   └── lightbox.min.css
+│   └── photoSwipeMixin.js
 │   └── scrollAnimations.js
 │   └── style.css
 ├── .gitignore
@@ -92,11 +92,12 @@ If you want to develop locally, use Vite for a fast setup:
 
 ### 3. **Customize your portfolio:**
 
-- **Herader:** Edit `Header.vue` to add your favicon, name, and social media links.
+- **Herader:** Edit `Header.vue` to add your favicon and change your name and picture.
 - **Footer:** Edit `Footer.vue` to include your email or a call-to-action.
 - **Home:** Edit `Home.vue` with your introduction, project thumbnails, and descriptions.
 - **About:** Personalize `About.vue` to share more about yourself and your story.
 - **Experience:** Edit `Experience.vue` to include your most recent roles and accomplishments.
+- **SocialMedia:** Edit `SocialMedia.vue` to add social media links.
 
 To add and edit individual projects, refer to the [Project Template Component](#project-template-component) section below.
 
