@@ -105,7 +105,7 @@ To add and edit individual projects, refer to the [Project Template Component](#
 Once you've customized your portfolio, build the project for deployment:
 
    ```bash
-   npm run build  # Generates the dist folder for productio
+   npm run build  # Generates the dist folder for production
    ```
 
 ### 5. **Deploy the Portfolio:**
@@ -160,7 +160,7 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 
 ## License
 
-This project is licensed under the [MIT License](<[URL](https://en.wikipedia.org/wiki/MIT_License?useskin=vector)>) - see the [LICENSE](<[URL](https://github.com/isasimo/Portfolio?tab=MIT-1-ov-file)>) file for details.
+This project is licensed under the [MIT License](<[URL](https://en.wikipedia.org/wiki/MIT_License?useskin=vector)>) - see the [LICENSE](<[URL]https://github.com/isasimo/Portfolio/blob/main/LICENSE)>) file for details.
 
 ## Contact
 
