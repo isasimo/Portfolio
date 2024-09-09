@@ -160,7 +160,7 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 
 ## License
 
-This project is licensed under the [MIT License](<[URL](https://en.wikipedia.org/wiki/MIT_License?useskin=vector)>) - see the [LICENSE](<[URL](https://github.com/isasimo/Portfolio/blob/main/LICENSE)>) file for details.
+This project is licensed under the [MIT License](<[URL](https://en.wikipedia.org/wiki/MIT_License?useskin=vector)>) - see the [LICENSE](https://github.com/isasimo/Portfolio/blob/main/LICENSE) file for details.
 
 ## Contact
 
