@@ -64,15 +64,31 @@
             <h2>Grafari</h2>
             <p>Grafari guides children aged 6 and above through a spelling journey, from the introduction of letters and sounds to the basics of writing and typing. The goal during the training is to get the learner to a full focus mode, making elements on screen as clean and less distractive as possible. While exploring other sections of the app, learners engage in various activities such as listening to stories, purchasing items in the virtual shop, and tracking their progress.</p>
           </div>
-          <div class="gallery">
-            <a class="imageoverlay" href="../assets/p_constructor/grafari1.jpg" data-lightbox="galleryGrafari" data-title="Grafari Cockpit"><img src="../assets/p_constructor/grafari1.jpg" alt="Grafari cockpit"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/grafari2.jpg" data-lightbox="galleryGrafari" data-title="Handwriting exercise"><img src="../assets/p_constructor/grafari2.jpg" alt="Grafari exercise: handwriting"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/grafari3.jpg" data-lightbox="galleryGrafari" data-title="Typing phonetic words exercise"><img src="../assets/p_constructor/grafari3.jpg" alt="Grafari exercise: typing phonetic words"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/grafari4.jpg" data-lightbox="galleryGrafari" data-title="Typing with phones exercise"><img src="../assets/p_constructor/grafari4.jpg" alt="Grafari exercise: typing with phones" ></a>
-            <a class="imageoverlay" href="../assets/p_constructor/grafari5.jpg" data-lightbox="galleryGrafari" data-title="Discover capital letters exercise"><img src="../assets/p_constructor/grafari5.jpg" alt="Grafari exercise: discover capital letters" ></a>
-            <a class="imageoverlay" href="../assets/p_constructor/grafari6.jpg" data-lightbox="galleryGrafari" data-title="Grafari Story World map"><img src="../assets/p_constructor/grafari6.jpg" alt="Grafari Story World map"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/grafari7.jpg" data-lightbox="galleryGrafari" data-title="Grafari Story World scene"><img src="../assets/p_constructor/grafari7.jpg" alt="Grafari Story World scene"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/grafari8.jpg" data-lightbox="galleryGrafari" data-title="Grafari Progress Passport"><img src="../assets/p_constructor/grafari8.jpg" alt="Grafari Progress Passport"></a>
+          <div class="gallery" id="gallery1">
+            <a href="../assets/p_constructor/grafari1.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari1.jpg" alt="Grafari cockpit">
+            </a>
+            <a href="../assets/p_constructor/grafari2.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari2.jpg" alt="Grafari exercise: handwriting">
+            </a>
+            <a href="../assets/p_constructor/grafari3.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari3.jpg" alt="Grafari exercise: typing phonetic words">
+            </a>
+            <a href="../assets/p_constructor/grafari4.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari4.jpg" alt="Grafari exercise: typing with phones">
+            </a>
+            <a href="../assets/p_constructor/grafari5.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari5.jpg" alt="Grafari exercise: discover capital letters">
+            </a>
+            <a href="../assets/p_constructor/grafari6.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari6.jpg" alt="Grafari Story World map">
+            </a>
+            <a href="../assets/p_constructor/grafari7.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari7.jpg" alt="Grafari Story World scene">
+            </a>
+            <a href="../assets/p_constructor/grafari8.jpg" target="_blank">
+              <img src="../assets/p_constructor/grafari8.jpg" alt="Grafari Progress Passport">
+            </a>
           </div>
         </section>
         
@@ -81,11 +97,19 @@
             <h2>Coach</h2>
             <p>The coach provides educators, supervisors and parents with valuable insights into learners' activities and sessions. Users can analyze individual and group progress, as well as offer support to learners who may require support.</p>
           </div>
-          <div class="gallery">
-            <a class="imageoverlay" href="../assets/p_constructor/coach1.jpg" data-lightbox="galleryCoach" data-title="Coach learning board interface"><img src="../assets/p_constructor/coach1.jpg" alt="Coach learning board interface"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/coach2.jpg" data-lightbox="galleryCoach" data-title="Coach learner progress interface"><img src="../assets/p_constructor/coach2.jpg" alt="Coach learner progress interface"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/coach3.jpg" data-lightbox="galleryCoach" data-title="Coach Download center interface"><img src="../assets/p_constructor/coach3.jpg" alt="Coach Download center interface"></a>
-            <a class="imageoverlay" href="../assets/p_constructor/coach4.jpg" data-lightbox="galleryCoach" data-title="Coach Educational content interface"><img src="../assets/p_constructor/coach4.jpg" alt="Coach Educational content interface"></a>
+          <div class="gallery" id="gallery2">
+            <a href="../assets/p_constructor/coach1.jpg" target="_blank">
+              <img src="../assets/p_constructor/coach1.jpg" alt="Coach learning board interface">
+            </a>
+            <a href="../assets/p_constructor/coach2.jpg" target="_blank">
+              <img src="../assets/p_constructor/coach2.jpg" alt="Coach learner progress interface">
+            </a>
+            <a href="../assets/p_constructor/coach3.jpg" target="_blank">
+              <img src="../assets/p_constructor/coach3.jpg" alt="Coach Download center interface">
+            </a>
+            <a href="../assets/p_constructor/coach4.jpg" target="_blank">
+              <img src="../assets/p_constructor/coach4.jpg" alt="Coach Educational content interface">
+            </a>
           </div>
         </section>
         
@@ -126,11 +150,11 @@
           <div class="before-and-after">
             <figure>
               <figcaption>Different variables for the component</figcaption>
-              <a class="imageoverlay" href="../assets/p_constructor/documentation1.jpg" data-lightbox="galleryBeforeAfter" data-title="Session details component in Figma"><img src="../assets/p_constructor/documentation1.jpg" alt="Session details component in Figma"></a>
+                <img src="../assets/p_constructor/documentation1.jpg" alt="Session details component in Figma">
             </figure>
             <figure>
               <figcaption>Component guide</figcaption>
-              <a class="imageoverlay" href="../assets/p_constructor/documentation2.jpg" data-lightbox="galleryBeforeAfter" data-title="Component documentation guide in Figma"><img src="../assets/p_constructor/documentation2.jpg" alt="Component documentation guide in Figma"></a>
+                <img src="../assets/p_constructor/documentation2.jpg" alt="Component documentation guide in Figma">
             </figure>
           </div>
         </section>
@@ -142,8 +166,10 @@
 <script>
   import ScrollReveal from 'scrollreveal';
   import { revealDefault } from '@/scrollAnimations';
+  import photoSwipeMixin from '../src/photoSwipeMixin';
 
   export default {
+    mixins: [photoSwipeMixin], // uses the photoSwipeMixin to open fullscreen images
 
     mounted() {
 

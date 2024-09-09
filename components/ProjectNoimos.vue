@@ -41,11 +41,19 @@
             <p>I led the creation of user flows and designed the interface for the Minimum Viable Product (MVP) of the web-app dedicated to streamlining the claims process for damaged cars. Collaborating closely with the founder, tech lead, and two machine learning engineers, I meticulously crafted every detail and interaction within the app.</p>
             <p>The data inputted by users in the initial version of the app not only informs claim evaluations but also serves as training data for the machine learning models. Consequently, precision and adherence to consistent guidelines were necessary for each claim. The accompanying screenshots showcase the use of silhouette assistance to aid users in capturing comprehensive images of the vehicle.</p>
           </div>
-          <div class="gallery reduced-gallery">
-            <a class="imageoverlay" href="../assets/p_noimos/capture-01.jpg" data-lightbox="galleryJSU" data-title="Camera capture from front"><img src="../assets/p_noimos/capture-01.jpg" alt="Interface for camera capture from front"></a>
-            <a class="imageoverlay" href="../assets/p_noimos/capture-02.jpg" data-lightbox="galleryJSU" data-title="Camera capture from front"><img src="../assets/p_noimos/capture-02.jpg" alt="Interface for camera capture from front"></a>
-            <a class="imageoverlay" href="../assets/p_noimos/capture-03.jpg" data-lightbox="galleryJSU" data-title="Camera capture from left corner"><img src="../assets/p_noimos/capture-03.jpg" alt="Interface for camera capture from left corner"></a>
-            <a class="imageoverlay" href="../assets/p_noimos/mark-damage.jpg" data-lightbox="galleryJSU" data-title="Select damage in the car"><img src="../assets/p_noimos/mark-damage.jpg" alt="Interface for selecting where there is a damage in the car"></a>
+          <div class="gallery reduced-gallery" id="gallery1">
+            <a href="../assets/p_noimos/capture-01.jpg" target="_blank">
+              <img src="../assets/p_noimos/capture-01.jpg" alt="Interface for camera capture from front">
+            </a>
+            <a href="../assets/p_noimos/capture-02.jpg" target="_blank">
+              <img src="../assets/p_noimos/capture-02.jpg" alt="Interface for camera capture from front">
+            </a>
+            <a href="../assets/p_noimos/capture-03.jpg" target="_blank">
+              <img src="../assets/p_noimos/capture-03.jpg" alt="Interface for camera capture from left corner">
+            </a>
+            <a href="../assets/p_noimos/mark-damage.jpg" target="_blank">
+              <img src="../assets/p_noimos/mark-damage.jpg" alt="Interface for selecting where there is a damage in the car">
+            </a>
           </div>
         </section>
 
@@ -70,8 +78,10 @@
             <h2>Claim report</h2>
             <p>Following the data input process, we generated a comprehensive claim report where all damages were meticulously annotated and marked. This manual annotation process, performed by mechanics, serves as foundational training data for machine learning models. These models are trained to discern between damages and non-damages, identify various types of damage, and accurately categorize them.</p>
           </div>
-          <div class="gallery">
-            <a class="imageoverlay" href="../assets/p_noimos/claim.jpg" data-lightbox="galleryClaim" data-title="Components selection"><img src="../assets/p_noimos/claim.jpg" alt="Interface for claim report highlighting claim summary, documents attachments, damage detail pictures and general pictures of the car"></a>
+          <div class="gallery" id="gallery2">
+            <a href="../assets/p_noimos/claim.jpg" target="_blank">
+              <img src="../assets/p_noimos/claim.jpg" alt="Interface for claim report highlighting claim summary, documents attachments, damage detail pictures and general pictures of the car">
+            </a>
           </div>
         </section>
 
@@ -82,8 +92,10 @@
 <script>
   import ScrollReveal from 'scrollreveal';
   import { revealDefault } from '@/scrollAnimations';
-
+  import photoSwipeMixin from '../src/photoSwipeMixin';
+  
   export default {
+    mixins: [photoSwipeMixin], // uses the photoSwipeMixin to open fullscreen images
 
     mounted() {
 
@@ -110,6 +122,7 @@
       }); 
 
     },
+
   };
 </script>
   
@@ -149,9 +162,6 @@
 
 .step.final-step {
   background-color: #3B82F6;
-}
-
-.arrow {
 }
 
 @media (max-width: 768px) {

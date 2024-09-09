@@ -9,6 +9,9 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'),
         },
     },
+    build: {
+        sourcemap: false,
+    },
     plugins: [vue()]
     // Other Vite configurations if needed
 });

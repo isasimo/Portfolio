@@ -16,14 +16,6 @@
     },
   };
 
-  lightbox.option({
-      'resizeDuration': 300,
-      'imageFadeDuration': 300,
-      'disableScrolling': true,
-      'wrapAround': true,
-      'alwaysShowNavOnTouchDevices': true,
-      'positionFromTop': 100,
-    })
   </script>
   
 <style>
