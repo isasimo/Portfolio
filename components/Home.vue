@@ -282,18 +282,27 @@
 
 @keyframes ticker {
   100% {
-    transform: translateX(-100%); /*try changing this to -100vw*/
+    transform: translateX(-100%);
   }
 }
 
+@media (max-width: 480px) {
+  .home{
+    gap: 60px;
+  }
+  .ticker {
+    display: none;
+  }
+  .gallery {
+    max-width:max-content;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-image {
+    height: fit-content;
+  }
 
-/* Ensure transition classes are defined in your global stylesheet */
-.fade-up-enter-active, .fade-up-leave-active {
-  transition: opacity 1s ease, transform 1s ease;
-}
-.fade-up-enter, .fade-up-leave-to {
-  opacity: 0;
-  transform: translateY(20px);
 }
 
 </style>

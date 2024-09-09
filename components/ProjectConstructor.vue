@@ -108,7 +108,7 @@
           <p>The two apps based on neuroscience and scientific studies to improve spelling, problem solving and reduce math anxiety were created before my time in Dybuster. The first collaboration started in 2017 as a freelance, and my task was to improve the navigation and user experience of the apps. This contributed in winning several awards like the Klaus J. Jacobs Awards Best Practice Prize:</p>
           <div class="video-container">
             <iframe 
-              width="740" 
+              width="98%" 
               height="416" 
               src="https://www.youtube.com/embed/rzSB_VLOkiw?si=9mu0OUlfkD34oKDg" 
               frameborder="0" 

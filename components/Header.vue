@@ -54,14 +54,15 @@
       align-items: center;
       padding: 32px 40px 0 40px;
       flex: 1;
+      gap: 24px;
     }
 
     .page-name{
       display: flex;
       align-items: center;
       gap: 1rem;
-      width: 14%;
-    }
+/*       width: 14%;
+ */    }
 
     .page-name img{
       width: 50px;
@@ -115,8 +116,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
-      width: 14%;
-    }
+/*       width: 14%;
+ */    }
 
     .social-media a:not(:first-child) {
       margin-left: 24px;
@@ -124,6 +125,15 @@
 
     .social-icons:hover path {
       fill: var(--accent-color);
+    }
+
+    @media (max-width: 767px) {
+      .header {
+        flex-direction: column;
+      }
+      .social-media {
+        display: none;
+      }
     }
 
 </style>

@@ -73,23 +73,20 @@ export default {
   display: block;
   margin: 0;
 }
+
 @media (max-width: 768px) {
-.gallery{
-  width: 80%;
+  .gallery img {
+    flex: 1 1 calc(50% - 20px); /* 2 columns on smaller screens */
+    max-width: calc(50% - 20px);
+  }
 }
-.gallery img {
-  flex: 1 1 calc(50% - 20px); /* 2 columns on smaller screens */
-  max-width: calc(50% - 20px);
-}
-}
+
 @media (max-width: 480px) {
-.gallery{
-  width: 70%;
+  .gallery img {
+    flex: 1 1 calc(100% - 20px); /* 1 column on very small screens */
+    max-width: calc(100% - 20px);
+  }
 }
-.gallery img {
-  flex: 1 1 calc(100% - 20px); /* 1 column on very small screens */
-  max-width: calc(100% - 20px);
-}
-}
+
 
 </style>

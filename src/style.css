@@ -204,7 +204,7 @@ Project components
 
 .meta {
   display: flex;
-  gap: 100px;
+  gap: 96px;
   width: 100%;
   flex-wrap: wrap; /* This allows wrapping on smaller screens */
 }
@@ -267,12 +267,12 @@ Project components
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  width: 630px;
   background: radial-gradient(53.4019% 96.0134% at 50% 24.5%, rgb(69, 69, 57) 0%, rgb(0, 0, 0) 72.6104%);
   border-radius: 8px;
   box-shadow: rgba(194, 193, 134, 0.14) 0px 0px 8px 6px;
   border: 1px solid var(--tertiary-color);
-  padding: 32px 40px 48px;
+  padding: 32px 60px 48px;
+  text-align: center;
 }
 
 .key-contributions ul {
@@ -389,9 +389,44 @@ Project components
 }
 
 /* Media query for smaller screens */
-@media (max-width: 850px) {
+
+@media (max-width: 767px) { 
+  h1 {
+    font-size: 4rem;
+  }
+  .main-content {
+    gap: 80px;
+  }
+  .prizes-container {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .sticky-text-gallery {
+    flex-direction: column;
+  }
+  .sticky-text-gallery .text-section {
+    position: relative;
+    top: 0px;
+    max-width: max-content;
+  }
   .before-and-after {
     flex-direction: column;
     gap: 16px; /* Adjust gap if needed */
   }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p.centered{
+    padding: 0;
+  }
+  .meta {
+    gap: 48px;
+  }
+  .main-content {
+    gap: 48px;
+  }
+}
+

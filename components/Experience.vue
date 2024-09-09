@@ -17,7 +17,7 @@
             <div class="dashed-line"></div>
             <div class="position">Product designer</div>
           </div>
-          <div class="date">2022—now</div>
+          <div class="date">2019—22</div>
         </li>
         <li>
           <div class="experience-item">
@@ -56,7 +56,7 @@
   
 <style scoped>
 .experience {
-  width: 550px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,6 +102,19 @@
   color: var(--tertiary-color);
   margin-left: 20px;
   width: 16%;
+}
+
+@media (max-width: 767px) {
+  .experience {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .dashed-line{
+    display: none;
+  }
 }
 
 </style>

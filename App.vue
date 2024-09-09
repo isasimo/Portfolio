@@ -1,10 +1,8 @@
 <!-- App.vue -->
 <template>
-    <div id="app">
-      <header-component></header-component>
-      <router-view></router-view>
-      <footer-component></footer-component>
-    </div>
+    <header-component></header-component>
+    <router-view></router-view>
+    <footer-component></footer-component>
   </template>
   
   <script>
@@ -29,12 +27,27 @@
   </script>
   
 <style>
-#app {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 120px;
-}
+
+  #app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    padding: 0 16px;
+  }
+
+  @media (max-width: 767px) {
+    #app {
+      gap: 80px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #app {
+      gap: 48px;
+    }
+  }
+
 </style>
   
