@@ -49,7 +49,20 @@
           </div>
         </section>
 
-        
+        <section class="info-block">
+          <h2>User flow</h2>
+          <div class="user-flow">
+              <div class="step">Basic info</div>
+              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <div class="step">Car documents</div>
+              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <div class="step">General pictures</div>
+              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <div class="step">Damage details</div>
+              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <div class="step final-step">Claim report</div>
+          </div>
+        </section>
 
 
         <section class="sticky-text-gallery">
@@ -106,5 +119,64 @@
   grid-auto-rows: minmax(0, 1fr);
   grid-template-columns: repeat(2, minmax(200px, 1fr));
 }
+
+.info-block h2 {
+  text-align: center;
+}
+.user-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 16px;
+}
+.step {
+  height: 240px;
+  min-width: 140px;
+  background-color: #E56354;
+  color: white;
+  padding: 20px 30px;
+  margin: 0 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step.final-step {
+  background-color: #3B82F6;
+}
+
+.arrow {
+}
+
+@media (max-width: 768px) {
+
+  .reduced-gallery {
+    grid-template-columns: auto;
+  }
+  .user-flow {
+    flex-direction: column;
+  }
+  
+  .step-container {
+    flex-direction: column;
+  }
+  
+  .step {
+    margin: 10px 0;
+    height: 100px;
+    width: 300px;
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+  }
+}
+
 </style>
   
