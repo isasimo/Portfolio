@@ -5,6 +5,7 @@ import About from './components/About.vue';
 import ProjectTemplate from './components/ProjectTemplate.vue';
 import ProjectConstructor from './components/ProjectConstructor.vue';
 import ProjectJSU from './components/ProjectJSU.vue';
+import ProjectNoimos from './components/ProjectNoimos.vue';
 
 const routes = [
     { path: '/', component: Home },
@@ -12,6 +13,7 @@ const routes = [
     { path: '/about', component: About },
     { path: '/constructor', component: ProjectConstructor },
     { path: '/jsu', component: ProjectJSU },
+    { path: '/noimos', component: ProjectNoimos },
 
     /* ONLY FOR TEMPLATE PREVIEW
     Comment for production */

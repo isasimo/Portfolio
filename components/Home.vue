@@ -55,7 +55,7 @@
           </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="/noimos" class="card">
           <div class="card-image">
             <img src="../assets/gallery-noimos.jpg" alt="Screenshot of a phone with Noimos mockup" />
           </div>
