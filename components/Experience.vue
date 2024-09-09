@@ -56,7 +56,7 @@
   
 <style scoped>
 .experience {
-  width: 70%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,17 +101,24 @@
   font-family: "DM Mono", monospace;
   color: var(--tertiary-color);
   margin-left: 20px;
-  width: 16%;
+  width: 20%;
+}
+@media (max-width: 1024px) {
+  .experience {
+    width: 70%;
+  }
 }
 
 @media (max-width: 767px) {
   .experience {
-    width: 100%;
+    width: 95%;
   }
 }
 
 @media (max-width: 480px) {
-
+  .experience {
+    width: 100%;
+  }
   .dashed-line{
     display: none;
   }

@@ -3,12 +3,17 @@
     <footer>
       <p>Contact me</p>
       <a href="mailto:designwithisa@gmail.com" class="maillink" target="_blank" rel="noopener noreferrer">designwithisa@gmail.com</a>
+      <SocialMediaComponent></SocialMediaComponent>
     </footer>
   </template>
   
 <script>
+  import SocialMediaComponent from './SocialMedia.vue';
+
   export default {
-    // Component options
+    components: {
+      SocialMediaComponent
+    }
   };
 </script>
   
@@ -24,6 +29,7 @@ footer {
 
 .maillink {
   font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .maillink:hover {
