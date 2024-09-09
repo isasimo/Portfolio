@@ -76,7 +76,7 @@
             <p class="card-type">Concept design</p>
             <div class="card-title">
               <h3>Disney Research</h3>
-              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <p>Coming soon</p>
             </div>
           </div>
         </a>
@@ -89,7 +89,7 @@
             <p class="card-type">Concept design</p>
             <div class="card-title">
               <h3>Fluent</h3>
-              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <p>Coming soon</p>
             </div>
           </div>
         </a>
@@ -102,7 +102,7 @@
             <p class="card-type">Product design, development</p>
             <div class="card-title">
               <h3>Crop Calculator</h3>
-              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <p>Coming soon</p>
             </div>
           </div>
         </a>
@@ -115,7 +115,7 @@
             <p class="card-type">Product Design</p>
             <div class="card-title">
               <h3>Foofit</h3>
-              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <p>Coming soon</p>
             </div>
           </div>
         </a>
@@ -128,7 +128,7 @@
             <p class="card-type">Jack of all trades</p>
             <div class="card-title">
               <h3>Els Campaners</h3>
-              <img class="arrow" src="../assets/arrow.svg" alt="" />
+              <p>Coming soon</p>
             </div>
           </div>
         </a>
@@ -239,10 +239,7 @@
 .card-title {
   display: flex;
   align-items: center;
-}
-
-.card-title h3 {
-  width: 87%;
+  justify-content: space-between;
 }
 
 .card-title img {
@@ -264,6 +261,7 @@
   left: 0;
   width: 100%;
   z-index: 1; /* Lower z-index to keep it behind other content */
+  overflow: hidden;
 }
 
 .ticker__list {

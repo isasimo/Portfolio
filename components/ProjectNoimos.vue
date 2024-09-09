@@ -49,6 +49,8 @@
           </div>
         </section>
 
+        
+
 
         <section class="sticky-text-gallery">
           <div class="text-section">
