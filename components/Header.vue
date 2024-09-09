@@ -60,6 +60,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      width: 14%;
     }
 
     .page-name img{
@@ -113,9 +114,11 @@
     .social-media {
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 14%;
     }
 
-    .social-media a {
+    .social-media a:not(:first-child) {
       margin-left: 24px;
     }
 
