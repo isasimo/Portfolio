@@ -115,16 +115,28 @@ Once you've customized your portfolio, build the project for deployment:
 1. Upload the contents of the dist folder to your web server.
 2. Ensure your server is configured to serve static files.
 
+> **Note:** If you're deploying this project on an Apache server, you may encounter "Not Found" errors for routes like `/about`, `/projects`, etc., due to the nature of Single Page Applications (SPA). To solve that, add an `.htaccess` file (a template is found in the project) or type the following content and upload it to the root of your deployed project:
+  
+  ```bash
+   <IfModule mod_rewrite.c>
+     RewriteEngine On
+     RewriteBase /
+     RewriteRule ^index\.html$ - [L]
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteCond %{REQUEST_FILENAME} !-d
+     RewriteRule . /index.html [L]
+   </IfModule>
+   ```
 **Option 2: Deploy via GitHub Pages**
 1. Follow the instructions for setting up [Github Pages](https://pages.github.com/)
 2. You can automate the deployment with the following command using `gh-pages` (if the project is already built):
 
-   ```bash
-   npm install gh-pages --save-dev
-   npm run deploy
-   ```
+```bash
+npm install gh-pages --save-dev
+npm run deploy
+```
    
-   This command builds the project and deploys it directly to your GitHub Pages.
+This command builds the project and deploys it directly to your GitHub Pages.
 
 :boom: Boom! Your portfolio is online, it was that easy!
 
