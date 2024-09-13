@@ -1,14 +1,15 @@
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
 
 /* Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/ */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
@@ -18,17 +19,31 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -38,14 +53,14 @@ p, h1, h2, h3, h4, h5, h6 {
   --primary-color: #fff;
   --secondary-color: #acacac;
   --tertiary-color: #5d5d5d;
-  --accent-color: #95FE3A;
+  --accent-color: #95fe3a;
   --support-color: #2b2b2b;
   --background-color: #050505;
-  --text-color: #E3E3E3;
+  --text-color: #e3e3e3;
 }
 
 ::selection {
-  background-color: #6110BD; /* Background color when text is selected */
+  background-color: #6110bd; /* Background color when text is selected */
 }
 
 /*
@@ -54,48 +69,57 @@ Global CSS
 **************************
 */
 
-h1, h2, h3, h4, h5, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
   color: var(--primary-color);
 }
 
-body{
+body {
+  font-family: "Inter", serif;
   background-color: var(--background-color);
 }
 
-h1{
+h1,
+h2 {
   font-family: "Alice", serif;
+}
+
+h1 {
   font-weight: 400;
   font-size: 5rem;
   line-height: 100%;
   text-align: left;
 }
 
-h1.centered{
+h1.centered {
   text-align: center;
   width: 984px;
 }
 
-h2{
-  font-family: "Alice", serif;
+h2 {
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 1.2em;
 }
 
-h3{
+h3 {
   font-size: 1rem;
   font-weight: 500;
 }
 
 p {
   color: var(--text-color);
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
 }
 
-p.centered{
+p.centered {
   text-align: center;
   padding: 0 14%;
 }
@@ -110,7 +134,7 @@ p a {
 }
 
 p a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%; /* Start from the center */
   transform: translateX(-50%);
@@ -137,8 +161,10 @@ li {
   color: var(--accent-color);
 }
 
-.header, .hero, .gallery {
-  position: relative; 
+.header,
+.hero,
+.gallery {
+  position: relative;
   z-index: 2;
 }
 
@@ -155,7 +181,7 @@ li {
 
 .buttonet:hover {
   background-color: var(--primary-color);
-}  
+}
 
 /*
 **************************
@@ -184,14 +210,14 @@ Project components
 .project .hero {
   display: flex;
   flex-direction: column;
-  gap: 80px
+  gap: 80px;
 }
 
 .project .hero .title {
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 24px
+  gap: 24px;
 }
 
 .project .hero img {
@@ -212,7 +238,7 @@ Project components
 .meta-group {
   display: flex;
   flex-direction: column;
-  gap: 16px
+  gap: 16px;
 }
 
 .meta-group h3 {
@@ -367,30 +393,30 @@ Project components
 
 .imageoverlay {
   position: relative;
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .imageoverlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
-    transition: background-color 0.3s ease; /* Smooth transition effect */
-    z-index: 1;
-    pointer-events: none; /* Prevents the overlay from blocking interactions */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  z-index: 1;
+  pointer-events: none; /* Prevents the overlay from blocking interactions */
 }
 
 .imageoverlay:hover::before {
-    background-color: rgba(0, 0, 0, 0.2); /* Black with 50% opacity on hover */
+  background-color: rgba(0, 0, 0, 0.2); /* Black with 50% opacity on hover */
 }
 
 /* Media query for smaller screens */
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   h1 {
     font-size: 4rem;
   }
@@ -419,7 +445,7 @@ Project components
   h1 {
     font-size: 3rem;
   }
-  p.centered{
+  p.centered {
     padding: 0;
   }
   .meta {
@@ -429,4 +455,3 @@ Project components
     gap: 48px;
   }
 }
-
