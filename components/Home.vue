@@ -22,7 +22,7 @@
         </div>
       </div>
       <section class="hero">
-        <h1 class="centered" ref="heroTitleSection"><span class="highlight">Hola! I’m Isa,</span> a product designer building products and communities</h1>
+        <h1 class="centered" ref="heroTitleSection"><span class="highlight">Hola! I’m Isa,</span> an intrepid product designer</h1>
         <p class="centered" ref="heroTextSection">
           Originally from Barcelona and living in Switzerland for 7 years, I’m a passionate interface designer that combines an understanding of various fields with a talent for innovative thinking. By creating visionary prototypes and refining products with care, I had the pleasure to work for companies like Disney Research, Constructor or Appfire while winning awards and prizes. Additionally, I’m
           a proud founder of a thrilling community garden.
