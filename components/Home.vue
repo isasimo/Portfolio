@@ -227,7 +227,7 @@
 }
 
 .card-type {
-  font-size: 14px;
+  font-size: 0.87rem;
   color: var(--secondary-color);
 }
 
@@ -243,7 +243,7 @@
 }
 
 .card-title img {
-  font-size: 20px;
+  font-size: 1.2rem;
   transition: margin-left 0.2s ease;
   width: 35px;
 }
