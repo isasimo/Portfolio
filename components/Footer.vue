@@ -45,6 +45,7 @@ footer {
   text-align: center;
   margin-bottom: 140px;
   padding: 20px;
+  align-items: center
 }
 
 .contact {
@@ -93,6 +94,14 @@ footer {
 
 .back-to-top:hover .chevron path {
   fill: var(--accent-color);
+}
+
+@media (max-width: 480px) {
+  .back-to-top {
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+  }
 }
 
 </style>
