@@ -243,16 +243,17 @@
 }
 
 .card-title img {
-  font-size: 1.2rem;
-  transition: margin-left 0.2s ease;
   width: 35px;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  transition: margin-left 0.2s ease;
 }
 
 .card:hover .arrow {
-  margin-left: 10px;
+  transform: translateX(-10px); /* Move the arrow 10px to the left */
 }
-
-/* Ticker */
 
 .ticker {
   display: flex;
