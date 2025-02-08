@@ -3,7 +3,7 @@
   <header class="header">
     <a href="/" class="page-name">
       <img src="../assets/isa-avatar.png" alt="Profile picture of Isa Simo" />
-      <p>Isa Simó</p>
+      <h3 class="uppercase">Isa<br />Simo</h3>
     </a>
     <nav>
       <ul class="navigation-menu">
@@ -45,7 +45,7 @@ export default {
 .page-name {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .page-name img {
