@@ -20,6 +20,122 @@
         <div class="ticker__item"><img src="../assets/06.jpg" alt="" /></div>
         <div class="ticker__item"><img src="../assets/07.jpg" alt="" /></div>
       </div>
+      <<<<<<< HEAD =======
+      <section class="hero">
+        <h1 class="centered" ref="heroTitleSection"><span class="highlight">Hola! I’m Isa,</span> an intrepid product designer</h1>
+        <p class="centered" ref="heroTextSection">
+          Originally from Barcelona and living in Switzerland for 7 years, I’m a passionate interface designer that combines an understanding of various fields with a talent for innovative thinking. By creating visionary prototypes and refining products with care, I had the pleasure to work for companies like Disney Research, Constructor or Appfire while winning awards and prizes. Additionally,
+          I’m a proud founder of a thrilling community garden.
+        </p>
+      </section>
+      <section class="gallery" ref="gallerySection">
+        <a href="/constructor" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-constructor.jpg" alt="Constructor for Schools screenshots" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Product Design</p>
+            <div class="card-title">
+              <h3>Constructor for Schools</h3>
+              <img class="arrow" src="../assets/arrow.svg" alt="" />
+            </div>
+          </div>
+        </a>
+
+        <a href="/jsu" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-jsu.jpg" alt="Universal Rule Build for Jira screenshot" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Product Design</p>
+            <div class="card-title">
+              <h3>JSU Automation Suite for Jira Workflows</h3>
+              <img class="arrow" src="../assets/arrow.svg" alt="" />
+            </div>
+          </div>
+        </a>
+
+        <a href="/noimos" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-noimos.jpg" alt="Screenshot of a phone with Noimos mockup" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Product Design</p>
+            <div class="card-title">
+              <h3>Claims app for Noimos</h3>
+              <img class="arrow" src="../assets/arrow.svg" alt="" />
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-disney.jpg" alt="Disney Research Studios logo" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Concept design</p>
+            <div class="card-title">
+              <h3>Disney Research</h3>
+              <p>Coming soon</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-fluent.jpg" alt="Screenshot of a phone with Fluent mockup" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Concept design</p>
+            <div class="card-title">
+              <h3>Fluent</h3>
+              <p>Coming soon</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-cropcalculator.jpg" alt="Screenshot of a phone with Crop Calculator mockup" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Product design, development</p>
+            <div class="card-title">
+              <h3>Crop Calculator</h3>
+              <p>Coming soon</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-foofit.jpg" alt="Screenshot of a phone with Foofit mockup" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Product Design</p>
+            <div class="card-title">
+              <h3>Foofit</h3>
+              <p>Coming soon</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-image">
+            <img src="../assets/gallery-elscampaners.jpg" alt="Cherries on a cherry tree" />
+          </div>
+          <div class="card-info">
+            <p class="card-type">Jack of all trades</p>
+            <div class="card-title">
+              <h3>Els Campaners</h3>
+              <p>Coming soon</p>
+            </div>
+          </div>
+        </a>
+      </section>
+      <ExperienceComponent></ExperienceComponent>
+
+      >>>>>>> d0b25f69f00a897fc0a6d88d818660c543f949b1
     </div>
     <section class="hero">
       <h4 class="centered uppercase">⚡ A lightning ⚡</h4>
@@ -220,6 +336,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  justify-content: center;
 }
 
 .card {
@@ -278,9 +395,12 @@ export default {
 }
 
 .card-title img {
-  font-size: 20px;
-  transition: margin-left 0.2s ease;
   width: 35px;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  transition: margin-left 0.2s ease;
 }
 .arrow-anim {
   width: 35px;
@@ -290,7 +410,7 @@ export default {
 }
 
 .card:hover .arrow {
-  margin-left: 10px;
+  transform: translateX(-10px); /* Move the arrow 10px to the left */
 }
 
 .card .arrow {
@@ -301,7 +421,7 @@ export default {
 
 .ticker {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

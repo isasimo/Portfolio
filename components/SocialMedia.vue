@@ -34,8 +34,9 @@
     .social-media {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .social-media a:not(:first-child) {
