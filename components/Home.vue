@@ -22,7 +22,7 @@
       </div>
     </div>
     <section class="hero">
-      <h5 class="centered uppercase">⚡ A lightning ⚡</h5>
+      <p class="tagline centered uppercase">⚡ A lightning ⚡</p>
       <h1 class="centered uppercase" ref="heroTitleSection"><span class="highlight">Digital</span> Product<span class="highlight"> Designer</span></h1>
     </section>
     <section class="gallery" ref="gallerySection">
@@ -160,17 +160,20 @@
       </a>
     </section>
     <ExperienceComponent></ExperienceComponent>
+    <AnnouncementComponent :link-url="'https://github.com/isasimo/Portfolio'"></AnnouncementComponent>
   </div>
 </template>
 
 <script>
 import ExperienceComponent from "./Experience.vue";
+import AnnouncementComponent from "./Announcement.vue";
 import ScrollReveal from "scrollreveal";
 import { revealDefault } from "@/scrollAnimations";
 
 export default {
   components: {
     ExperienceComponent,
+    AnnouncementComponent,
   },
 
   mounted() {
@@ -211,6 +214,11 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
+}
+
+.tagline {
+  font-family: "Figtree", sans-serif;
+  font-weight: 900;
 }
 
 /***** Gallery ******/

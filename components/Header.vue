@@ -3,7 +3,7 @@
   <header class="header">
     <a href="/" class="page-name">
       <img src="../assets/isa-avatar.png" alt="Profile picture of Isa Simo" />
-      <h4 class="uppercase">Isa<br />Simo</h4>
+      <p class="name uppercase">Isa<br />Simo</p>
     </a>
     <nav>
       <ul class="navigation-menu">
@@ -55,9 +55,10 @@ export default {
 
 .page-name p {
   color: var(--primary-color);
-  font-family: "Alice", serif;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 100%;
 }
 
 .navigation-menu {

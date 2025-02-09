@@ -1,43 +1,40 @@
 <!-- Footer.vue -->
 <template>
-    <footer>
-      <p>Contact me</p>
-      <a href="mailto:designwithisa@gmail.com" class="maillink" target="_blank" rel="noopener noreferrer">designwithisa@gmail.com</a>
-      <SocialMediaComponent></SocialMediaComponent>
+  <footer>
+    <h4 class="uppercase">Contact me</h4>
+    <a href="mailto:designwithisa@gmail.com" class="maillink" target="_blank" rel="noopener noreferrer">designwithisa@gmail.com</a>
+    <SocialMediaComponent></SocialMediaComponent>
 
-      <!-- Back to Top Button -->
-      <a href="#" class="back-to-top" @click.prevent="scrollToTop">
-        <svg class="chevron" width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0.764651 5.56333L6.55876 0.170422C6.80266 -0.0568076 7.19671 -0.0568076 7.44124 0.170422L13.2353 5.56333C13.5882 5.89135 13.5882 6.42505 13.2353 6.75366C12.8825 7.08169 12.3098 7.08169 11.9569 6.75366L6.99968 2.14032L2.04371 6.75366C1.69021 7.08169 1.11752 7.08169 0.76465 6.75366C0.411784 6.42505 0.411784 5.89135 0.764651 5.56333" fill="white"/>
-        </svg>
-        <span>Top</span>
-      </a>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" @click.prevent="scrollToTop">
+      <svg class="chevron" width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.764651 5.56333L6.55876 0.170422C6.80266 -0.0568076 7.19671 -0.0568076 7.44124 0.170422L13.2353 5.56333C13.5882 5.89135 13.5882 6.42505 13.2353 6.75366C12.8825 7.08169 12.3098 7.08169 11.9569 6.75366L6.99968 2.14032L2.04371 6.75366C1.69021 7.08169 1.11752 7.08169 0.76465 6.75366C0.411784 6.42505 0.411784 5.89135 0.764651 5.56333" fill="white" />
+      </svg>
+      <span>Top</span>
+    </a>
+  </footer>
+</template>
 
-    </footer>
-  </template>
-  
 <script>
-  import SocialMediaComponent from './SocialMedia.vue';
+import SocialMediaComponent from "./SocialMedia.vue";
 
-  export default {
-    components: {
-      SocialMediaComponent
+export default {
+  components: {
+    SocialMediaComponent,
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
-    methods: {
-      scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
-    }
-  };
+  },
+};
 </script>
-  
-<style scoped>
 
+<style scoped>
 footer {
-  position: relative; /* To position button inside the footer */
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -45,7 +42,7 @@ footer {
   text-align: center;
   margin-bottom: 140px;
   padding: 20px;
-  align-items: center
+  align-items: center;
 }
 
 .contact {
@@ -53,8 +50,9 @@ footer {
 }
 
 .maillink {
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 40px;
+  color: var(--secondary-color);
 }
 
 .maillink:hover {
@@ -63,9 +61,7 @@ footer {
 
 /* Back to top button styling */
 .back-to-top {
-  position: absolute;
-  right: 0px; /* Positioned to the right side of the footer */
-  bottom: 20px; /* Positioned slightly above the footer's bottom */
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +79,7 @@ footer {
 }
 
 .back-to-top span {
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -103,6 +99,4 @@ footer {
     margin-top: 40px;
   }
 }
-
 </style>
-  
