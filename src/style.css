@@ -87,7 +87,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Figtree", serif;
   font-weight: 900;
 }
@@ -119,6 +120,11 @@ h3.black {
 }
 
 h4 {
+  font-size: 1.3rem;
+  line-height: 100%;
+}
+
+h5 {
   font-size: 1rem;
   line-height: 100%;
 }

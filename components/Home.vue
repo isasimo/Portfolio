@@ -22,7 +22,7 @@
       </div>
     </div>
     <section class="hero">
-      <h4 class="centered uppercase">⚡ A lightning ⚡</h4>
+      <h5 class="centered uppercase">⚡ A lightning ⚡</h5>
       <h1 class="centered uppercase" ref="heroTitleSection"><span class="highlight">Digital</span> Product<span class="highlight"> Designer</span></h1>
     </section>
     <section class="gallery" ref="gallerySection">

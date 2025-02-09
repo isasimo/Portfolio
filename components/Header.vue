@@ -3,7 +3,7 @@
   <header class="header">
     <a href="/" class="page-name">
       <img src="../assets/isa-avatar.png" alt="Profile picture of Isa Simo" />
-      <h3 class="uppercase">Isa<br />Simo</h3>
+      <h4 class="uppercase">Isa<br />Simo</h4>
     </a>
     <nav>
       <ul class="navigation-menu">
