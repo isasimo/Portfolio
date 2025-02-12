@@ -11,7 +11,7 @@
 
     <section class="meta">
       <div class="meta-group">
-        <h3>Role</h3>
+        <p class="lighter">Role</p>
         <ul class="meta-items">
           <li>Interface design</li>
           <li>Design system</li>
@@ -23,13 +23,13 @@
         </ul>
       </div>
       <div class="meta-group">
-        <h3>Platform</h3>
+        <p class="lighter">Platform</p>
         <ul class="meta-items">
           <li>Web-app</li>
         </ul>
       </div>
       <div class="meta-group">
-        <h3>Duration</h3>
+        <p class="lighter">Duration</p>
         <ul class="meta-items">
           <li>2017 - 2022 [Freelance]</li>
           <li>2022 - present [Employee]</li>
@@ -39,14 +39,24 @@
 
     <main class="main-content">
       <section class="key-contributions">
-        <div class="key-contributions-container" ref="KeyContributionsMotion">
-          <h2>Key contributions</h2>
-          <ul>
-            <li>200K+ lifetime users</li>
-            <li>3 training apps for learners</li>
-            <li>1 coaching app for educators</li>
-            <li>Localization to 17 languages</li>
-          </ul>
+        <h2>Key contributions</h2>
+        <div class="key-container" ref="KeyContributionsMotion">
+          <div class="key-item">
+            <span class="value">200K+</span>
+            <p class="lighter">lifetime users</p>
+          </div>
+          <div class="key-item">
+            <span class="value">3</span>
+            <p class="lighter">learning apps</p>
+          </div>
+          <div class="key-item">
+            <span class="value">1</span>
+            <p class="lighter">coaching apps</p>
+          </div>
+          <div class="key-item">
+            <span class="value">10</span>
+            <p class="lighter">languages</p>
+          </div>
         </div>
       </section>
       <section class="prizes">

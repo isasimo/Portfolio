@@ -51,7 +51,7 @@ h6 {
 
 :root {
   --primary-color: #fff;
-  --secondary-color: #acacac;
+  --secondary-color: #878787;
   --tertiary-color: #5d5d5d;
   --accent-color: #95fe3a;
   --support-color: #2b2b2b;
@@ -74,7 +74,6 @@ h2,
 h3,
 h4,
 h5,
-p,
 a {
   color: var(--primary-color);
 }
@@ -138,6 +137,10 @@ p.centered {
 
 p.bold {
   font-weight: 600;
+}
+
+p.lighter {
+  color: var(--secondary-color);
 }
 
 a {
@@ -310,25 +313,39 @@ Project components
 
 .key-contributions {
   perspective: 1000px;
-}
-.key-contributions-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   align-items: center;
-  background: radial-gradient(53.4019% 96.0134% at 50% 24.5%, rgb(69, 69, 57) 0%, rgb(0, 0, 0) 72.6104%);
-  border-radius: 8px;
-  box-shadow: rgba(194, 193, 134, 0.14) 0px 0px 8px 6px;
-  border: 1px solid var(--tertiary-color);
-  padding: 32px 60px 48px;
-  text-align: center;
 }
 
-.key-contributions ul {
-  padding: 0;
-  color: var(--primary-color);
-  list-style-type: none;
+.key-container {
+  color: var(--text-color);
+  display: flex;
+  gap: 32px;
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.key-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 56px;
+  background: radial-gradient(53.4% 96.01% at 62.74% 21.14%, #2e2f29 0%, #000000 80%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 1px solid #e9eac7;
+  box-shadow: 0px 0px 32px rgba(213, 216, 40, 0.4);
+  padding: 1.5px 2px;
+  width: 240px; /* Ensure consistent width */
+  height: 150px; /* Ensure consistent height */
+  gap: 2px;
+  justify-content: center;
+}
+
+.key-item .value {
+  font-size: 3.5rem;
+  line-height: 100%;
 }
 
 /***** Prizes and awards ******/

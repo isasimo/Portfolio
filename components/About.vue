@@ -30,7 +30,6 @@
     </div>
   </section>
   <ExperienceComponent></ExperienceComponent>
-  <!-- :initial-text="'I\'m a unicorn 🦄'"  -->
   <AnnouncementComponent :link-url="'https://github.com/isasimo/Portfolio'"></AnnouncementComponent>
 </template>
 
