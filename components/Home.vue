@@ -22,8 +22,8 @@
       </div>
     </div>
     <section class="hero">
-      <p class="tagline centered uppercase">⚡ A lightning ⚡</p>
-      <h1 class="centered uppercase" ref="heroTitleSection"><span class="highlight">Digital</span> Product<span class="highlight"> Designer</span></h1>
+      <p class="tagline uppercase">⚡ A lightning ⚡</p>
+      <h1 class="uppercase" ref="heroTitleSection"><span class="highlight">Digital</span> Product<span class="highlight"> Designer</span></h1>
     </section>
     <section class="gallery" ref="gallerySection">
       <!-- CARD 1 -->
@@ -85,7 +85,7 @@
               </svg>
             </div>
           </div>
-          <h3 class="black">Claims app for Noimos</h3>
+          <h3 class="black">Noimos</h3>
         </div>
       </a>
 
@@ -219,6 +219,7 @@ export default {
 .tagline {
   font-family: "Figtree", sans-serif;
   font-weight: 900;
+  font-size: 1.2rem;
 }
 
 /***** Gallery ******/

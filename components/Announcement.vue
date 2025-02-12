@@ -1,9 +1,8 @@
 <!-- Announcement.vue -->
+<!-- Call this instance like:  
+    <AnnouncementComponent :hover-text="'Hover text'" :initial-text="'Default text'" :link-url="'https://github.com/isasimo/Portfolio'"></AnnouncementComponent>
+ -->
 <template>
-  <!--<div class="callout-banner" @mouseenter="changeText" @mouseleave="resetText">
-         <span class="banner-text">{{ bannerText }}</span>
- 
-  </div>-->
   <a :href="linkUrl" target="_blank" class="announcement uppercase" @mouseenter="changeText" @mouseleave="resetText">
     <span class="banner-text">{{ bannerText }}</span>
   </a>
@@ -16,7 +15,7 @@ export default {
     // Allow parent component to pass custom hover text
     hoverText: {
       type: String,
-      default: "⚡ Duplicate portfolio in Github ⚡",
+      default: "⚡ Duplicate portfolio from Github ⚡",
     },
     // Initial text (default in case no text is passed)
     initialText: {

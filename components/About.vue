@@ -1,8 +1,12 @@
 <!-- About.vue -->
 <template>
   <section class="about" ref="aboutSection">
-    <h2 class="default-animate"><span class="highlight">Hey! Hola! Hallo!</span> I’m Isa, a product designer in Switzerland</h2>
+    <h2 class="default-animate"><span class="highlight">Hey! Hola! Hallo!</span> I’m Isa, a product designer in Switzerland 🇨🇭</h2>
     <div class="default-animate">
+      <p>
+        Originally from Barcelona and living in Switzerland for 7 years, I’m a passionate interface designer that combines an understanding of various fields with a talent for innovative thinking. By creating visionary prototypes and refining products with care, I had the pleasure to work for companies like Disney Research, Constructor or Appfire while winning awards and prizes. Additionally, I’m
+        a proud founder of a thrilling community garden.
+      </p>
       <p>My journey into the design world began at the age of 15, using CorelDRAW (who remembers that?) I emerged victorious in a poster design contest for my hometown's festivities. From that moment, I was hooked.</p>
       <p>
         My formal education in graphic design introduced me to the foundations of typography, color, layout and the basics of design. This education, paved a way to the modern design scenes of Barcelona and Madrid, where I collaborated with companies and startups to create multimedia experiences. In 2012, I developed an interactive website for "Els Convidats", the first interactive miniseries
@@ -14,7 +18,7 @@
       </p>
       <p>Between career milestones, I took two breaks in 2014 and 2018, embracing the freedom to travel the world without a fixed return ticket. These journeys enriched my perspective and creativity while learning new skills like a Permaculture Design Certificate. I'm a strong believer of continuous learning in all type of fields, not just design.</p>
       <p>In my free time, you'll often find me hiking in the Alps or cultivating hundreds of kilos of veggies in the community garden I founded in my hometown. Sharing my heart between two places, I feel at home in both Barcelona and Switzerland.</p>
-      <p>In addition, I’m a proud <a href="https://www.16personalities.com/profiles/cc17b6f3582c9">ENFP-A Campaigner</a> who likes to connect and cooperate with people.</p>
+      <p>In addition, I’m a proud <a href="https://www.16personalities.com/profiles/cc17b6f3582c9" target="_blank">ENFP-A Campaigner</a> who likes to connect and cooperate with people.</p>
     </div>
     <div class="gallery default-animate">
       <img src="../assets/01.jpg" alt="" />
@@ -26,7 +30,8 @@
     </div>
   </section>
   <ExperienceComponent></ExperienceComponent>
-  <AnnouncementComponent :initial-text="'I\'m a unicorn 🦄'" :link-url="'https://github.com/isasimo/Portfolio'"></AnnouncementComponent>
+  <!-- :initial-text="'I\'m a unicorn 🦄'"  -->
+  <AnnouncementComponent :link-url="'https://github.com/isasimo/Portfolio'"></AnnouncementComponent>
 </template>
 
 <script>
@@ -56,7 +61,7 @@ export default {
 
 <style scoped>
 .about {
-  max-width: 740px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
