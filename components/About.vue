@@ -1,3 +1,4 @@
+<!-- About.vue -->
 <template>
   <section class="about" ref="aboutSection">
     <h2 class="default-animate"><span class="highlight">Hey! Hola! Hallo!</span> I’m Isa, a product designer in Switzerland 🇨🇭</h2>
