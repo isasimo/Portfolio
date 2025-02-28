@@ -24,17 +24,20 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 100px;
+  padding: 0 16px;
 }
 
 @media (max-width: 767px) {
   #app {
     gap: 80px;
+    padding: 0 16px;
   }
 }
 
 @media (max-width: 480px) {
   #app {
     gap: 48px;
+    padding: 0 16px;
   }
 }
 </style>

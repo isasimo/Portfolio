@@ -225,6 +225,7 @@ Project components
 .main-content {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 140px;
   align-items: center;
 }
@@ -458,7 +459,10 @@ Project components
 
 @media (max-width: 767px) {
   h1 {
-    font-size: 6rem;
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.5rem;
   }
   .main-content {
     gap: 80px;
@@ -477,13 +481,16 @@ Project components
   }
   .before-and-after {
     flex-direction: column;
-    gap: 16px; /* Adjust gap if needed */
+    gap: 16px;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
   }
   p.centered {
     padding: 0;
