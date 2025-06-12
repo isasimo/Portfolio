@@ -234,7 +234,7 @@ export default {
 
 .card {
   width: 360px;
-  border-radius: 60px;
+  border-radius: 50px;
   display: block;
   overflow: hidden; /* Ensure content doesn’t overflow the card */
 }

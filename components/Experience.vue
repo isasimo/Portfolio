@@ -36,7 +36,7 @@
         <div class="date">2015—17</div>
       </li>
     </div>
-    <a href="https://www.linkedin.com/in/isabelsimo/" class="buttonet" target="_blank" rel="noopener noreferrer">Open my LinkedIn</a>
+    <a href="https://www.linkedin.com/in/isabelsimo/" class="buttonet" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </section>
 </template>
 

@@ -198,7 +198,7 @@ li {
   background-color: var(--accent-color);
   border-radius: 40px;
   color: var(--background-color);
-  box-shadow: 0px 0px 30px rgba(149, 254, 58, 0.7);
+  box-shadow: 0px 0px 30px rgba(149, 254, 58, 0.4);
   font-weight: 600;
   font-size: 0.875rem;
 }
@@ -501,4 +501,8 @@ Project components
   .main-content {
     gap: 48px;
   }
+  .project .hero .title {
+    width: 100%;
+  }
+  
 }
